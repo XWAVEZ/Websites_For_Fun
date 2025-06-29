@@ -1,2 +1,2 @@
 # Websites_For_Fun
-A site to get inspiration based on your hobbies
+These are some websites I created for fun and might work on in the near future.
