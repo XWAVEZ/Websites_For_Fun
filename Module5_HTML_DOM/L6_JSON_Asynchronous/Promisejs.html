@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Promises</title>
+</head>
+<body>
+    <h2>JS Promises functioning</h2>
+    <p id="dem"></p>
+    <script>
+        function mDisplayer(some) {
+            document.getElementById("dem").innerHTML = some;
+        }
+        function sum(a, b) {
+            var sum = a + b;
+            mDisplayer(sum);
+        }
+        let mPromise = new Promise (function(mReslv, mrej){
+            // producing code may take some time
+            let x = 0; //some code(try changing to 5)
+            if (x == 0) {
+                mReslv ("Ok") // when successful
+                mrej ("Error") // when failure
+            }
+        });
+        // consuming code - must wait for fullfilled promise
+        mPromise.then (
+            function(value) {sum(5,5);}, // code is succesful
+            function(error) {sum(error);} // when failure
+        );
+    </script>
+</body>
+</html>

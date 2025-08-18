@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays, more</title>
+</head>
+<body>
+    <p>multiply every element in the array with 10:</p>
+    
+    <p>These are the numbers:- 
+        28 6 19 95
+    </p>
+    <p id="multi"></p>
+    <script>
+        var numbers = [28, 6, 19, 95];
+        function myfun(num){
+            return num * 10;
+        }
+        var na = numbers.map(myfun);
+        document.getElementById("multi").innerHTML = na;
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Num Limit</title>
+
+</head>
+<body>
+    <p>Enter a number and click "OK"</p>
+    <input type="number" id="id1" min="100" max="300" required>
+    <button onclick="mF2()">OK</button>
+
+    <p>IF the number is less than 100 or greater than 300, an error message will pop up.</p>
+    <p id="ress"></p>
+    <script>
+        function mF2() {
+            var inObj = document.getElementById("id1");
+            if (!inObj.checkValidity()) {
+                document.getElementById("ress").innerHTML = inObj.validationMessage;
+            }
+            else {
+                document.getElementById("ress").innerHTML = "Input Ok";
+            }
+        }
+    </script>
+</body>
+</html>

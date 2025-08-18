@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS randomizer</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // store a random decimal no. (0-1)
+        var deci = Math.random();
+        //PRINT
+        document.write("Random no. from 0 -1: " + deci + "<br>");
+
+        //store random whole no.
+        var rwn = Math.random()*11;
+        //floor / round off
+        var rwnf = Math.floor(rwn);
+        //print
+        document.write("Random whole no. from 0-10: " + rwnf + "<br>");
+        // random 1 - 6 (dice)
+        var dice = Math.random()*6; //this is from 0-5
+        //to get 1- 6 add 1
+        var droll = Math.floor(dice) + 1;
+        document.write("<br>");
+        document.write("Dice roll: " + droll)
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS FUNCTIONS</title>
+</head>
+<body>
+    <p>Basic methods</p>
+
+    <script>
+    var x = "AmaZinG";
+        document.write(x.toLocaleUpperCase());
+        document.write("<br>");
+        document.write(x.toLocaleLowerCase());
+        document.write("<br>");
+        document.write("<br>");
+        // true or false -- check if starts with "this letter"
+        document.write(x.startsWith('i'));
+        document.write("<br>");
+
+        document.write(x.startsWith('A'));
+        document.write("<br>");
+        document.write("<br>");
+        
+
+        // test  returns true or false . test()
+        // check if this word exists or not
+        var y = "I learnt about methods";
+        // create regular expression = "the one u want to check"
+        var patt = new RegExp("about");
+        var result1 = patt.test(x); // this is false
+        var result2 = patt.test(y); // this is true
+        document.write(result1);
+        document.write("<br>");
+        document.write(result2);
+    </script>
+</body>
+</html>

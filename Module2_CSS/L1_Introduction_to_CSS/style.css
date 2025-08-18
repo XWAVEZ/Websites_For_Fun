@@ -1,0 +1,25 @@
+/* global css */
+*{
+    font-size: 30px;
+    font-weight: 500;
+}
+/* External css */
+h3{
+    color: rgb(255, 71, 47);
+}
+/* Element selector */
+h4{
+    color: rgb(74, 255, 107);
+}
+/* class selector */
+.YE{
+    color: rgb(0, 15, 219);
+}
+/* id selector */
+#NAH{
+    color: rgb(255, 238, 0);
+}
+/* group select */
+h5,p{
+    color: gold;
+}

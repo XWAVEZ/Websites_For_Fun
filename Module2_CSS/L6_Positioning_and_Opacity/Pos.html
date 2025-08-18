@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Positioning Tutorial</title>
+    <style>
+    body{
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    div{
+        width: 200px;
+        height: 100px;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+        /* margin: 20px; */
+    }
+    .rel-box{
+        position: relative;
+        background-color: orange;
+        top: 320px;
+        left: 100px;
+    }
+    .abslt-box{
+        position: absolute;
+        top: 190px;
+        left: 290px;
+        background-color: crimson;
+    }
+    
+    #ja{
+        height: 1800px;
+    }
+    .fixed-box{
+        position: fixed;
+        top: 10px;
+        right: 0px;
+        background-color: rgb(189, 0, 189);
+    }
+    .sticky-box-🤨{
+        position: sticky;
+        top: 0px;
+        background-color: rgb(0, 164, 164);
+    }
+    </style>
+</head>
+<body>
+    <div class="rel-box">
+        Relative box<br>
+        (Copies his flow)
+        <div class="abslt-box">
+            Absolute inside box<br>
+            (Copies the rel-box's flow)
+        </div>
+    </div>
+
+    <div class="abslt-box">
+        Asolute outside box<br>
+        (Copies the nearest parent's flow or body/html's flow)
+    </div>
+
+    <div class="fixed-box">
+        Fixed box<br>
+        (Never flows)
+    </div>
+
+    <div class="sticky-box-🤨">
+        Sticky box<br>
+        (Stickly sticks to a unsticky sticky object/page's flow)
+    </div>
+    <div id="ja"></div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS convertion</title>
+</head>
+<body>
+    <h2>the JS String() method</h2>
+
+    <p>The String method can convert a number to a string</p>
+
+    <p id="numrs"></p>
+    <p id="strrs"></p>
+ 
+    <script>
+        var x = 50;
+        var y = 70;
+        document.getElementById('numrs').innerHTML = x+y;    
+        document.getElementById('strrs').innerHTML = String(x) + String(y);//does not add cuz its a string
+        
+        </script>
+</body>
+</html>

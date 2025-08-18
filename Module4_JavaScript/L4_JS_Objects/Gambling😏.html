@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luckdraw</title>
+</head>
+<body>
+    <center>
+    <h1>LETS GO GAMBLING!</h1>
+    <p id="results"></p>
+
+    <script>
+        function luckydraw(){
+            document.write("Participants: ");
+            for (var a = 0; i < arguments.length; a++) { // loop through names
+                document.write(arguments[a] + "," + " "); //display participants
+
+            }
+            // winner winner chicken dinner
+            var ri = Math.floor (Math.random() * arguments.length); //pick random indx
+            document.write("<br> Winner: " + arguments[ri]); //show winner
+            document.getElementById("results");
+        }
+        luckydraw("Ace, Rounak, Sai Shiv, TrueGambler, Kevin")
+
+    </script>
+    </center>
+</body>
+</html>
