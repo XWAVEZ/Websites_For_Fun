@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login/ sign up form</title>
+    <style>
+       
+    </style>
+</head>
+
+<body>
+<form id="loginForm" onsubmit="validate(event)">
+    <fieldset>
+    <legend>Login</legend>
+    <label>Username:</label>
+    <input type="text" id="user"><br>
+    <input type="radio" id="fm">Male<br>
+    <input type="radio" id="fm">Female
+    <br>
+    <label>E-mail:</label>
+    <input type="email" id="dispem">
+    <br>
+    <label>password:</label>
+    <input type="password" id="passrblx"><br>
+    <button type="submit">Login</button>
+    <button type="reset">Reset</button>
+    </fieldset>
+    <div id="mgbx2"></div>
+</form>
+
+<form id="sign up">
+    <fieldset>
+        <legend>Sign Up</legend>
+        <label>Username:</label>
+        <input type="text" id="user2"><br>
+        <label>E-mail:</label>
+        <input type="email" id="em"><br>
+        <label>Age:</label>
+        <input type="number" id="age"><br>
+        <label></label>
+        <input type="radio" id="me">Male<br>
+        <input type="radio" id="me">Female<br>
+        <label>Password:</label>
+        <input type="password" id="pass2"><br>
+        <label>Reenter Password:</label>
+        <input type="password" id="pass3"><br>
+        <button type="submit">Sign Up</button>
+        <button type="reset">Reset</button>
+    </fieldset>
+    <div id="mgbx"></div>
+</form>
+
+
+<script>
+    
+    function  validate(e){
+    const email = document.getElementById('dispem').value;
+    const passwrd = document.getElementById('passrblx').value;
+    
+    const email2 = document.getElementById('em').value;
+    const passwwwrd = document.getElementById('pass2').value;
+    const passwwwrd2 = document.getElementById('pass3').value;
+    const mgbxx = document.getElementById('mgbx2');
+    const mgbxxx = document.getElementById('mgbx');
+    let mgbx2 = '';
+    if (email == ''){
+        mgbx2 = 'Please enter a valid email.'
+    }
+    else if (passwrd == ''){
+        msgbx2 = 'Please enter a password with atleast 8 characters'
+    }
+    
+    }
+</script>
+</body>
+
+</html>

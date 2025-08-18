@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Arguments</title>
+</head>
+
+<body>
+    <h2>Sum of Arguments - JavaScript Project</h2>
+    <script>
+        // Function to convert degrees to radians
+        function toRadians(degrees) {
+            return degrees * (Math.PI / 180);
+        }
+
+        // Function to sum all arguments
+        function sumOfArguments(...args) {
+            let sum = 0;
+            for (let value of args) {
+                sum += value;
+            }
+
+            // Convert sum to radians for trig functions
+            let radians = toRadians(sum);
+
+            // Trigonometric values
+            let trigValues = {
+                sum: sum,
+                radians: radians.toFixed(2),
+                sin: Math.sin(radians).toFixed(4),
+                cos: Math.cos(radians).toFixed(4),
+                tan: Math.tan(radians).toFixed(4)
+            };
+
+            return trigValues;
+        }
+
+        // Call the function with some arguments
+        let result = sumOfArguments(30, 45, 60); // you can change these numbers
+
+        // Display result on the page
+        document.write("<strong>Input Arguments:</strong> 30, 45, 60<br>");
+        document.write("<strong>Sum:</strong> " + result.sum + "<br>");
+        document.write("<strong>Radians:</strong> " + result.radians + "<br>");
+        document.write("<strong>sin(" + result.sum + "°):</strong> " + result.sin + "<br>");
+        document.write("<strong>cos(" + result.sum + "°):</strong> " + result.cos + "<br>");
+        document.write("<strong>tan(" + result.sum + "°):</strong> " + result.tan + "<br>");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+a:hover{
+    color: red;
+}
+.ni{
+    font-size: 40px;
+    color: rgb(252, 0, 0);
+}
+
+ul li:nth-child(3){
+    background-color: rgb(18, 18, 18);
+}

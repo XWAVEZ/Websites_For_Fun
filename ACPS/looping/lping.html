@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love Coding - Random</title>
+</head>
+
+<body>
+    <h2>While Loop - Random Percentages</h2>
+    <script>
+        let count = 1; // how many times we want to run
+
+        while (count <= 100) { // print 100 random lines
+            let randomNum = Math.floor(Math.random() * 100) + 1; // random 1–100
+            document.write("I love coding " + randomNum + "%<br>");
+            count++;
+        }
+    </script>
+</body>
+
+</html>

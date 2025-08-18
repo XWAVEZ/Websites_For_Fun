@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>A calculator</h1>
+    <p id="r1"></p>
+    <p id="r2"></p>
+    <p id="r3"></p>
+    <p id="r4"></p>
+    <p id="r5"></p>
+
+    <script>
+        var x = 5;
+        var y = 6;
+        var sum = x + y;
+        var div = x / y;
+        var multi = x * y;
+        var rem = x % y;
+        var sub = x - y;
+
+        document.getElementById("r1").innerHTML = "The sum of 5 and 6 is=" + sum;
+        document.getElementById("r2").innerHTML = "The quotient of 5 and 6 is=" + div;
+        document.getElementById("r3").innerHTML = "The product of 5 and 6 is=" + multi;
+        document.getElementById("r4").innerHTML = "The remainder of 5 and 6 is=" + rem;
+        document.getElementById("r5").innerHTML = "The difference of 5 and 6 is=" + sub;
+    </script>
+</body>
+</html>

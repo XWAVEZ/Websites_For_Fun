@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Object and Array Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f8ff;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Student Profile</h1>
+
+    <div id="output" class="section"></div>
+
+    <script>
+        var student = {
+            name: "Kevin",
+            age: 14,
+            grade: "9th Grade",
+            hobbies: ["Reading", "Gaming", "Coding", "Drawing"]
+        };
+
+        var output = "<div class='section'>";
+        output += "<div class='label'>Name:</div> " + student.name + "<br>";
+        output += "<div class='label'>Age:</div> " + student.age + "<br>";
+        output += "<div class='label'>Grade:</div> " + student.grade + "<br>";
+        output += "</div>";
+
+        output += "<div class='section'><div class='label'>Hobbies (by index):</div><br>";
+        output += "First Hobby: " + student.hobbies[0] + "<br>";
+        output += "Second Hobby: " + student.hobbies[1] + "<br></div>";
+
+        output += "<div class='section'><div class='label'>All Hobbies (joined):</div><br>";
+        output += student.hobbies.join(", ") + "</div>";
+
+        var removed = student.hobbies.pop();
+        output += "<div class='section'><div class='label'>Removed Hobby (using pop):</div><br>";
+        output += removed + "</div>";
+
+        output += "<div class='section'><div class='label'>Hobbies After pop():</div><br>";
+        output += student.hobbies.join(", ") + "</div>";
+
+        student.favoriteSubject = "Mathematics";
+        output += "<div class='section'><div class='label'>Favorite Subject:</div><br>";
+        output += student.favoriteSubject + "</div>";
+
+        document.getElementById("output").innerHTML = output;
+    </script>
+
+</body>
+
+</html>

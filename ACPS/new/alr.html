@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handle Errors in JS</title>
+</head>
+
+<body>
+    <h2>Handling Errors with try...catch</h2>
+    <p id="output"></p>
+
+    <script>
+        try {
+            // This will throw an error because "num" is not defined
+            let result = num + 10;
+            document.getElementById("output").innerHTML = "Result: " + result;
+        } catch (error) {
+            document.getElementById("output").innerHTML =
+                " An error occurred: " + error.message;
+        }
+    </script>
+</body>
+
+</html>

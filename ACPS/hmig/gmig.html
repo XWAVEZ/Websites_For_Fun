@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class in JS</title>
+</head>
+
+<body>
+    <h2>JavaScript Classes Example</h2>
+    <script>
+        
+        class Person {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+
+            
+            displayInfo() {
+                return `Name: ${this.name}, Age: ${this.age}`;
+            }
+
+            
+            static welcome() {
+                return "Welcome to the Person Class!";
+            }
+        }
+
+        
+        class Student extends Person {
+            constructor(name, age, grade) {
+                super(name, age); 
+                this.grade = grade;
+            }
+
+            
+            displayStudent() {
+                return `${this.displayInfo()}, Grade: ${this.grade}`;
+            }
+        }
+
+       
+        document.write("<b>" + Person.welcome() + "</b><br><br>");
+
+        let student1 = new Student("Kevin", 15, "10th");
+        document.write(student1.displayStudent());
+    </script>
+</body>
+
+</html>

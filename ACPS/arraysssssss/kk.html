@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map and Arrange an Array</title>
+</head>
+
+<body>
+    <h2>Array Mapping and Sorting in JavaScript</h2>
+    <script>
+        let numbers = [5, 12, 8, 20, 3, 15];
+        document.write("<b>Original Array:</b> " + numbers + "<br><br>");
+
+        let mappedArray = numbers.map(num => num * 2);
+        document.write("<b>Mapped Array (2):</b> " + mappedArray + "<br><br>");
+
+        let ascending = [...mappedArray].sort((a, b) => a - b);
+        document.write("<b>Ascending Order:</b> " + ascending + "<br><br>");
+
+        let descending = [...mappedArray].sort((a, b) => b - a);
+        document.write("<b>Descending Order:</b> " + descending + "<br><br>");
+    </script>
+</body>
+
+</html>
